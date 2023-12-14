@@ -1,0 +1,30 @@
+﻿@model DotnetAT.Models.AddFuncionarioViewModel
+
+@{
+}
+
+<h1>Adicionar Funcionario</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Nome</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Salario</label>
+        <input type="number" class="form-control" asp-for="Salario">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Data de Contratação</label>
+        <input type="date" class="form-control" asp-for="DataDaContratacao">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Cargo</label>
+        <input type="text" class="form-control" asp-for="Cargo">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
